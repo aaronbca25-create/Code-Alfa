@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my portifolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			border: dashed 2px darkgoldenrod;
+			border-radius: 8px;
+			padding: 30px 30px;
+			background-color: darkgoldenrod;
+		}
+
+		.left {
+			width: 30%;
+			background-color: lightblue;
+			padding: 20px;
+		}
+
+		.right {
+			width: 70%;
+			background-color: rosybrown;
+			padding: 20px;
+		}
+
+		img {
+			width: 60%;
+			margin-left: 60px;
+			/*margin-bottom: 180px;*/
+			border-radius: 60px;
+			border: 2px solid gold;
+			box-shadow: 0 0 10px gold;
+		}
+
+		h1 {
+			margin-left: 60px;
+			color: darkgoldenrod;
+		}
+		/*/left{
+		all:unset;
+		display:flex;
+		align-content:center;
+		}*/
+		h2 {
+			margin-left: 60px;
+			font-family: Courier New, Courier, monospace;
+			font-size: 30px;
+			color: maroon;
+		}
+		label{
+		font-family:Impact;
+		}
+		#start {			
+			height: 8px;
+			width: 50px;
+			padding: 4px;
+			text-align: center;
+			margin-left: 2px;
+			border-radius: 15px;
+		}
+		
+		#end {
+			height: 8px;
+			width: 50px;
+			padding: 4px;
+			margin-left: 2px;
+			text-align: center;
+			border-radius: 15px;
+		}
+
+		#s {
+			text-decoration: none;
+			/*border: dashed 2px darkgoldenrod;*/
+			border: none;
+			border-radius: 8px;
+			padding: 30px 30px;
+			background-color: navajowhite;
+			color: darkgoldenrod;
+			box-shadow: gold 0 0 10px;
+			font-size: 20px;
+			text-transform: capitalize;
+		}
+
+		h3 {
+			color: maroon;
+			font-size: 18px;
+		}
+
+		a {
+			text-decoration: none;
+			font-size: 28px;
+			color: brown;
+		}
+
+		p {
+			color: seagreen;
+			font-size: 18px;
+		}
+
+		h4 {
+			font-size: 20px;
+			font-family: algerian;
+			background-color: darkgoldenrod;
+		}
+
+		#n {
+			/*border:5px solid darkgoldenrod;*/
+			padding: 40px 40px;
+			border-radius: 10px;
+		}
+
+		button {
+		}
+
+		h5 {
+			margin-left: 60px;
+			font-family: Courier New, Courier, monospace;
+			font-size: 20px;
+			color: maroon;
+		}
+		/*.glow {
+			color: darkgoldenrod;
+			text-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 20px goldenrod, 0 0 40px goldenrod;
+		}*/
+
+		/* ==========================
+   TABLETS
+========================== */
+		@media (max-width: 992px) {
+
+			.container {
+				flex-direction: column;
+				padding: 15px;
+			}
+
+			.left,
+			.right {
+				width: 100%;
+				box-sizing: border-box;
+			}
+
+			img {
+				display: block;
+				width: 220px;
+				max-width: 90%;
+				margin: 20px auto;
+			}
+
+			h1, h2, h5 {
+				margin-left: 0;
+				text-align: center;
+			}
+
+			#n {
+				padding: 15px;
+			}
+
+			#s {
+				width: 100%;
+				font-size: 18px;
+				padding: 18px;
+			}
+
+			iframe {
+				width: 100%;
+				height: 250px;
+			}
+		}
+
+		/* ==========================
+   PHONES
+========================== */
+		@media (max-width: 768px) {
+
+			body {
+				font-size: 16px;
+			}
+
+			.container {
+				padding: 10px;
+			}
+
+			.left,
+			.right {
+				padding: 15px;
+			}
+
+			h1 {
+				font-size: 28px;
+			}
+
+			h2 {
+				font-size: 24px;
+			}
+
+			h3 {
+				font-size: 18px;
+			}
+
+			h4 {
+				font-size: 18px;
+			}
+
+			h5 {
+				font-size: 18px;
+			}
+
+			p,
+			a {
+				font-size: 16px;
+			}
+
+			img {
+				width: 180px;
+				border-radius: 50%;
+			}
+
+			#s {
+				font-size: 16px;
+				padding: 15px;
+			}
+
+			#start,
+			#end {
+				width: 60px;
+			}
+
+			iframe {
+				height: 200px;
+			}
+
+			ul {
+				padding-left: 20px;
+			}
+		}
+
+		/* ==========================
+   SMALL PHONES
+========================== */
+		@media (max-width:480px) {
+
+			h1 {
+				font-size: 22px;
+			}
+
+			h2 {
+				font-size: 20px;
+			}
+
+			h3 {
+				font-size: 16px;
+			}
+
+			img {
+				width: 150px;
+			}
+
+			iframe {
+				height: 180px;
+			}
+
+			#s {
+				font-size: 15px;
+				padding: 12px;
+			}
+		}
+		.project-frame {
+			width: 100%;
+			height: 300px;
+			border: none;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="left">
+			<h1 class="glow">MR AARON AMINI</h1>
+			<img src="MR AMINI.jpeg">
+			<ul id="k">
+				<li id="n">
+					<button onclick="window.open('education%20sec.html', '_blank')" id="s">
+						Education Section
+					</button>
+				</li>
+				<li id="n">
+					<button onclick="window.open('Certification section.html', '_blank')" id="s">
+						Certification Section
+					</button>
+				</li>
+				
+				<li id="n">
+					<button onclick="window.open('Aaron_Amini_CV_With_Photo_Placeholder.pdf', '_blank')" id="s">
+						Resume Section
+					</button>
+				</li>
+			</ul>
+</div>
+
+		<div class="right">
+			<h2>GOAL AND CURRENT ENDEAVOURS</h2>
+			<br><br>
+			<h3>Hello, l'm AARON AMINI Actively seeking new opportunities in[Bachelor of Computer Application]</h3>
+			<h3>Currently l'm in my final year pursing a BCA degree</h3>
+			<label for="start">Start Year</label><input type="number" readonly id="start" value="2024">
+			<label for="end">End Year</label><input type="number" readonly id="end" value="2027">
+			<br><br>
+
+			<ul>
+				<li><h5><u>HERE ARE SOME FEW PROJECTS I HAVE COMPLETED</u></h5></li>
+				<li><h4><a href="ex.html">Calculator</a></h4><iframe src="index.html" class="project-frame"></iframe></li>
+				<li><h4><a href="copy LANDINGpage.html">Landing Page</a></h4><iframe src="Landing_page.html" class="project-frame"></iframe></li>
+				<li><h4><a href="home.page.html">My Literature website</a></h4><iframe src="home.page.html" class="project-frame"></iframe></li>
+			</ul>
+		</div>
+
+	</div>
+
+</body>
+</html>

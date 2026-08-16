@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title> Product landing page</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		  href="lan.css">
+</head>
+<body>
+	<main>
+		<nav class="nav-bar">
+			<a class="nav-link" href="#features">Features</a>
+			<a class="nav-link" href="#classification">Procedures</a>
+			<a class="nav-link" href="#pricing">Pricing</a>
+		</nav>
+		<header id="header">
+			<div style="text-align:center;"><img src="https://i.ibb.co/B5RGhVB7/IMG-20250726-WA0015.jpg"></div>
+		</header>
+		<h1>FOR THE LOVE OF HONEY</h1>
+		<form id="form">
+			<input id="email" name="email" placeholder="Enter your email" type="email" style="display:block;margin:10px auto;">
+		</form>
+		<br>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<input id="submit" type="submit" value="connect with us" onclick="windows.location .href='#honeyproducts'" style="display:block;margin:10px auto;">
+		</form>
+		<section id="features">
+			<div class="box2">
+				<table cellspacing="10" cellpadding="10">
+
+					<tr>
+						<th>
+							<a href="https://www.facebook.com">
+								<i class="fab fa-facebook-f" style="color:lime;"></i>
+								<strong> Facebook</strong>
+							</a>
+						</th>
+						<td>Pure Gold in a jar - 100% natural honey</td>
+					</tr>
+
+					<tr>
+						<th>
+							<a href="https://www.linkedin.com">
+								<i class="fab fa-linkedin-in" style="color:lime;"></i>
+								<strong> LinkedIn</strong>
+							</a>
+						</th>
+						<td>Our honey is 100% natural, rich in antioxidants, and known to boost immunity.</td>
+					</tr>
+
+					<tr>
+						<th>
+							<a href="https://www.youtube.com">
+								<i class="fab fa-youtube" style="color:red;"></i>
+								<strong> YouTube</strong>
+							</a>
+						</th>
+						<td>Each jar is tested for purity and traceability.</td>
+					</tr>
+
+				</table>
+			</div>
+		</section>
+
+		<section>
+			<div class="video-container">
+				<video controls>
+						<source src="honey_vid.mp4" type="video/mp4">					
+				</video>
+			</div>
+		</section>
+		<section id="classification">
+			<div class="container">
+				<div class="box">
+					<header><strong>Monofloral Honey</strong></header>
+					<p>
+						Original Honey is a proudly local brand established in 2000, <br>
+						dedicated to producing pure, unblended<br>
+						monofloral honey straight from the hive to your home<br><br>
+						<strong>R80 - 100g</strong>
+					</p>
+					<button onclick="windows.location.href='#select'">Section</button>
+				</div>
+				<div class="box">
+					<header><strong>Polyfloral Honey</strong></header>
+					<p>Polyfloral honey, made from the nectar of multiple florah types, is more widely available and therefore less costly.</p>
+					<p><strong>60-100g</strong></p>
+					<button onclick="windows.location.href='#select'">Section</button>
+				</div>
+			</div>
+		</section>
+		<div id="footer">
+			Privary Terms Contact<br>Copyrite 2000. Original Honey
+		</div>
+
+	</main>
+</body>
+</html>

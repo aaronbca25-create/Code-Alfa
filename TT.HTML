@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: yellow;
+      text-align: center;
+      margin-top: 100px;
+    }
+    #result a {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+
+<input type="text" id="inputBox" placeholder="Enter book or poem">
+<button onclick="showInput()">Go</button>
+
+<p id="result"></p>
+
+<script>
+  function showInput() {
+    let value = document.getElementById("inputBox").value.toLowerCase();
+    let result = document.getElementById("result");
+
+    if (value === "book") {
+      result.innerHTML = '<a href="file:///C:/Users/hp/Desktop/THE.DOWN.FALL.HTML">BOOK.SECTION</a>';
+     }else if (value === "poem"){
+      result.innerHTML = '<a href="file:///C:/Users/hp/Desktop/New%20folder/mk2.html">POEM.SECTION</a>';
+    } else {
+      result.innerText = "No link found for: " + value;
+    }
+  }
+</script>
+
+</body>
+</html>

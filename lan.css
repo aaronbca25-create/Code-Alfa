@@ -1,0 +1,267 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url("hh.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: orange;
+    padding: 15px 30px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+    .nav-bar a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+/* ================= IMAGE ================= */
+
+img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    max-width: 90%;
+    object-fit: cover;
+    margin: 30px auto;
+    border: 2px solid gold;
+    box-shadow: 0 0 25px orangered;
+}
+
+/* ================= HEADING ================= */
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+    color: orange;
+}
+
+/* ================= EMAIL FORM ================= */
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    #form input {
+        display: block;
+        margin: 10px auto;
+        padding: 10px;
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+/* ================= SUBMIT BUTTON ================= */
+
+#submit {
+    margin-top: 40px;
+    font-family: Impact, sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: orange;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ================= FEATURES ================= */
+
+#features {
+    width: 90%;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.box2 {
+    width: 100%;
+    padding: 20px;
+    background-color: saddlebrown;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    color: gold;
+    font-size: 18px;
+    font-family: Britannic, sans-serif;
+}
+
+th {
+    white-space: nowrap;
+}
+
+    th a {
+        color: white;
+        text-decoration: none;
+    }
+
+/* ================= VIDEO ================= */
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+    .video-container video {
+        width: 560px;
+        max-width: 100%;
+        height: auto;
+    }
+
+iframe {
+    width: 560px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+/* ================= HONEY BOXES ================= */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    margin-top: 40px;
+    font-family: cursive;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: purple;
+    color: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    color: white;
+    background-color: darkorange;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .nav-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 12px 10px;
+    }
+
+        .nav-bar a {
+            margin: 5px 8px;
+            font-size: 14px;
+        }
+
+    img {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 25px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 40px;
+        padding: 0 10px;
+    }
+
+    #features {
+        width: 95%;
+        margin: 60px auto;
+    }
+
+    .box2 {
+        padding: 10px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    th {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .box {
+        width: 90%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #footer {
+        all:unset;
+        font-size: 12px;
+        padding: 15px;
+        
+    }
+}

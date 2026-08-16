@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="cal.css">
+	<title></title>
+</head>
+<body>
+
+	<div class="calculator">
+		<input type="text" id="display" readonly style="height:100px">
+		<br><br><br>
+		<div class="box">
+			<button onclick="appendValue('1')" id="numbers">1</button>
+			<button onclick="appendValue('2')" id="numbers">2</button>
+			<button onclick="appendValue('3')" id="numbers">3</button>
+			<button onclick="appendValue('+')" id="operators">+</button>
+			<button onclick="appendValue('4')" id="numbers">4</button>
+			<button onclick="appendValue('5')" id="numbers">5</button>
+			<button onclick="appendValue('6')" id="numbers">6</button>
+			<button onclick="appendValue('-')" id="operators">-</button>
+			<button onclick="appendValue('7')" id="numbers">7</button>
+			<button onclick="appendValue('8')" id="numbers">8</button>
+			<button onclick="appendValue('9')" id="numbers">9</button>
+			<button onclick="appendValue('*')" id="operators">*</button>
+			<button onclick="appendValue('0')" id="numbers">0</button>
+			<button onclick="appendValue('/')" id="operators">/</button>
+			<button onclick="calculate()" id="equals">=</button>
+			<button onclick="deleteLast()" id="del">DEL</button>
+		</div>
+		<div id="result"></div>
+	</div>
+	<script src="cal.js"></script>
+</body>
+</html>
