@@ -12,7 +12,7 @@ body {
     padding: 0;
     width: 100%;
     *{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,Impact;
     }
 }
 
@@ -297,6 +297,12 @@ iframe {
         font-size: 16px;
         background-attachment: scroll;
         background-position: center top;
+
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,Impact;
+        }
+    }
+
     }
 
 
